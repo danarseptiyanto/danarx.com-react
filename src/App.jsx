@@ -15,8 +15,6 @@ export default function Home() {
             <Link to="/cv" className="text-white">
                 vcccc
             </Link>
-
-            <p className="text-red-400">hehe</p>
             <div className="bg-bg-secondary">
                 <Navbar />
                 <Hero />
