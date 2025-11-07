@@ -1,28 +1,28 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import './index.css'
-// import App from './App.jsx'
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
-
+// main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import RootLayout from "./layouts/RootLayout";
 import App from "./App";
 import ComponentName from "./Pages/CV";
 import "./index.css";
 
+// ✅ Define your routes
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <RootLayout />, // Layout wrapper
+        children: [
+            { index: true, element: <App /> }, // same as path="/"
+            { path: "cv", element: <ComponentName /> },
+        ],
+    },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="/cv" element={<ComponentName />} />
-            </Routes>
-        </BrowserRouter>
+        {/* ✅ Use RouterProvider instead of BrowserRouter */}
+        <RouterProvider router={router} />
     </React.StrictMode>,
 );
