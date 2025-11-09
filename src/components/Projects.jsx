@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
+import { Image } from "@imagekit/react";
 
 export default function Projects() {
     return (
@@ -10,31 +11,31 @@ export default function Projects() {
                 </p>
                 <div className="mt-5 grid grid-cols-1 gap-5 pb-3 md:grid-cols-2 md:gap-6">
                     <Link href="#">
-                        <img
-                            src="/img/ui/project1.png"
+                        <Image
+                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/thumbnail-project/"
+                            src="project1.png"
                             className="bg-line hover:bg-accent-primary aspect-video w-full transition-colors duration-200"
-                            alt="Project1"
                         />
                     </Link>
                     <Link href="#">
-                        <img
-                            src="/img/ui/project2.png"
+                        <Image
+                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/thumbnail-project/"
+                            src="project2.png"
                             className="bg-line hover:bg-accent-primary aspect-video w-full transition-colors duration-200"
-                            alt="Project1"
                         />
                     </Link>
                     <Link href="#">
-                        <img
-                            src="/img/ui/project3.png"
+                        <Image
+                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/thumbnail-project/"
+                            src="project3.png"
                             className="bg-line hover:bg-accent-primary aspect-video w-full transition-colors duration-200"
-                            alt="Project1"
                         />
                     </Link>
                     <Link href="#">
-                        <img
-                            src="/img/ui/project3.png"
+                        <Image
+                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/thumbnail-project/"
+                            src="project3.png"
                             className="bg-line hover:bg-accent-primary aspect-video w-full transition-colors duration-200"
-                            alt="Project1"
                         />
                     </Link>
                 </div>

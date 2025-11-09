@@ -2,6 +2,7 @@ import React from "react";
 import PlusIconHero from "./PlusIconHero";
 import { Link } from "react-router-dom";
 import LinksHero from "./LinksHero";
+import { Image } from "@imagekit/react";
 
 export default function Hero() {
     return (
@@ -45,9 +46,11 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="bg-line">
-                        <img
-                            className="h-full object-cover"
-                            src="/img/ui/hero.png"
+                        <Image
+                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/ui/"
+                            src="/hero.png"
+                            className="aspect-auto h-full w-full object-cover"
+                            alt="Picture of the author"
                         />
                     </div>
                 </div>
