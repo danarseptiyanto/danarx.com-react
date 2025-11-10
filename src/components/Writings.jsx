@@ -1,5 +1,23 @@
 import React from "react";
 import WritingCard from "./WritingCard";
+import matter from "gray-matter";
+import { Link } from "react-router-dom";
+
+import { Buffer } from "buffer";
+window.Buffer = Buffer;
+
+const posts = import.meta.glob("../blog/*.md", { as: "raw", eager: true });
+
+const blogPosts = Object.entries(posts).map(([path, content]) => {
+    const slug = path.split("/").pop().replace(".md", "");
+    const { data } = matter(content);
+    return {
+        slug,
+        title: data.title,
+        thumbnail: data.thumbnail,
+        date: data.date,
+    };
+});
 
 export default function Writings() {
     return (
@@ -16,18 +34,13 @@ export default function Writings() {
                             in the JavaScript ecosystem.
                         </p>
                     </div>
-                    <WritingCard
-                        title="Tailwind CSS is so intuitive that if you know CSS, you know Tailwind"
-                        url="#"
-                    />
-                    <WritingCard
-                        title="Tailwind CSS is so intuitive that if you know CSS, you know Tailwind"
-                        url="#"
-                    />
-                    <WritingCard
-                        title="Tailwind CSS is so intuitive that if you know CSS, you know Tailwind"
-                        url="#"
-                    />
+                    {blogPosts.map((post) => (
+                        <WritingCard
+                            key={post.slug}
+                            title={post.title}
+                            url={`/blog/${post.slug}`}
+                        />
+                    ))}
                 </div>
             </div>
             <div className="border-b-line mx-auto border-b">

@@ -4,7 +4,7 @@ export default function RootLayout() {
     return (
         <>
             {/* You can add a shared header or navbar here if needed */}
-            <main>
+            <main className="bg-bg-primary">
                 <Outlet /> {/* ✅ This renders the current page */}
             </main>
 

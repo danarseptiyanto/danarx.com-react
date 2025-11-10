@@ -11,7 +11,7 @@ import "./App.css";
 
 export default function Home() {
     return (
-        <div className="bg-bg-primary">
+        <>
             <Link to="/cv" className="text-white">
                 vcccc
             </Link>
@@ -23,6 +23,6 @@ export default function Home() {
             <Writings />
             <Tools />
             <Footer />
-        </div>
+        </>
     );
 }
