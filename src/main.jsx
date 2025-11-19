@@ -8,6 +8,7 @@ import App from "./App";
 import CV from "./pages/CV";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
+import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
 
 import "./index.css";
 
@@ -20,7 +21,10 @@ const router = createBrowserRouter([
             { path: "cv", element: <CV /> },
             { path: "blog", element: <BlogList /> },
             { path: "blog/:slug", element: <BlogPost /> },
-            { path: "blog/:slug", element: <BelajarEraDigital }
+            {
+                path: "project/belajar-era-digital",
+                element: <BelajarEraDigital />,
+            },
         ],
     },
 ]);
