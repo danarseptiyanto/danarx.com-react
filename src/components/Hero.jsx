@@ -17,7 +17,7 @@ export default function Hero() {
                             </h1>
                             <PlusIconHero />
                         </div>
-                        <div className="text-text-primary p-5 py-7 text-lg leading-relaxed md:p-9 md:py-9 md:text-xl">
+                        <div className="text-text-primary p-5 py-7 text-base leading-relaxed md:p-9 md:py-9 md:text-xl">
                             Hi, I'm Danar Septiyanto, a freelance fullstack web
                             developer based in Indonesia. I'm currently working
                             as a freelance web developer. I love to build web

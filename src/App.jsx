@@ -12,9 +12,9 @@ import "./App.css";
 export default function Home() {
     return (
         <>
-            <Link to="/cv" className="text-white">
+            {/* <Link to="/cv" className="text-white">
                 vcccc
-            </Link>
+            </Link>*/}
             <div className="bg-bg-secondary">
                 <Navbar />
                 <Hero />

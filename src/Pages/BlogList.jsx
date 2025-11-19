@@ -4,7 +4,11 @@ import matter from "gray-matter";
 import { Buffer } from "buffer";
 window.Buffer = Buffer;
 
-const posts = import.meta.glob("../blog/*.md", { as: "raw", eager: true });
+const posts = import.meta.glob("../blog/*.md", {
+    query: "?raw",
+    import: "default",
+    eager: true,
+});
 
 const blogPosts = Object.entries(posts).map(([path, content]) => {
     const slug = path.split("/").pop().replace(".md", "");
