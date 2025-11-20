@@ -5,24 +5,32 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./layouts/RootLayout";
 import App from "./App";
-import ComponentName from "./Pages/CV";
+import CV from "./pages/CV";
+import BlogList from "./pages/BlogList";
+import BlogPost from "./pages/BlogPost";
+import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
+
 import "./index.css";
 
-// ✅ Define your routes
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <RootLayout />, // Layout wrapper
+        element: <RootLayout />,
         children: [
-            { index: true, element: <App /> }, // same as path="/"
-            { path: "cv", element: <ComponentName /> },
+            { index: true, element: <App /> },
+            { path: "cv", element: <CV /> },
+            { path: "blog", element: <BlogList /> },
+            { path: "blog/:slug", element: <BlogPost /> },
+            {
+                path: "project/belajar-era-digital",
+                element: <BelajarEraDigital />,
+            },
         ],
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        {/* ✅ Use RouterProvider instead of BrowserRouter */}
         <RouterProvider router={router} />
     </React.StrictMode>,
 );

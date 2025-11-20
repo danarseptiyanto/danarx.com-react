@@ -17,7 +17,7 @@ export default function Hero() {
                             </h1>
                             <PlusIconHero />
                         </div>
-                        <div className="text-text-primary p-5 py-7 text-lg leading-relaxed md:p-9 md:py-9 md:text-xl">
+                        <div className="text-text-primary p-5 py-7 text-base leading-relaxed md:p-9 md:py-9 md:text-xl">
                             Hi, I'm Danar Septiyanto, a freelance fullstack web
                             developer based in Indonesia. I'm currently working
                             as a freelance web developer. I love to build web
@@ -25,7 +25,7 @@ export default function Hero() {
                         </div>
                         <div className="flex justify-between">
                             <div className="bg-accent-primary border-t-line hidden aspect-square w-[180px] items-center justify-center border-t md:flex">
-                                <svg
+                                {/* <svg
                                     width="96"
                                     height="96"
                                     viewBox="0 0 96 96"
@@ -33,7 +33,8 @@ export default function Hero() {
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path d="M64.0148 37.6568L29.5885 72.0832L23.9316 66.4264L58.358 32H28.0149V24H72.0148V68H64.0148V37.6568Z" />
-                                </svg>
+                                </svg> */}
+                                <img src="img/ui/avatar2.png" alt="" />
                             </div>
                             <div className="grid w-full grid-cols-2">
                                 <LinksHero url="#" name="Github" />

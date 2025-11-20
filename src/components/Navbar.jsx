@@ -5,7 +5,10 @@ export default function Navbar() {
     return (
         <div className="border-b-line mx-auto border-b">
             <div className="border-x-line mx-0 flex justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
-                <Link className="bg-accent-primary my-3.5 flex aspect-square w-[41px] items-center justify-center">
+                <Link
+                    to="/"
+                    className="bg-accent-primary my-3.5 flex aspect-square w-[41px] items-center justify-center"
+                >
                     <svg
                         className="fill-white"
                         width="25"

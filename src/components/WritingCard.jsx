@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function WritingCard({ title, url }) {
+export default function WritingCard({ title, url, key }) {
     return (
-        <div className="border-t-line flex items-center gap-4 border-t md:gap-6">
-            <div className="border-r-line flex aspect-square w-[147px] items-center justify-center border-r">
+        <div
+            key={key}
+            className="border-t-line flex items-center gap-4 border-t p-5 md:gap-6 md:p-0"
+        >
+            <div className="border-r-line hidden aspect-square w-[147px] items-center justify-center border-r md:flex">
                 <svg
                     viewBox="0 0 96 96"
                     className="fill-text-primary aspect-square h-20 md:h-24"
@@ -15,7 +18,7 @@ export default function WritingCard({ title, url }) {
             </div>
             <Link
                 className="text-text-primary py-1 pr-5 text-base font-semibold md:text-xl"
-                href={url}
+                to={url}
             >
                 {title}
             </Link>
