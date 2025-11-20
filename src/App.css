@@ -15,14 +15,29 @@
         "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    /* --color-bg-secondary: #171717;
-    --color-bg-primary: #0a0a0a;
-    --color-line: #333333;
-    --color-accent-secondary: #333333;
+    /* Define color tokens for Tailwind */
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-primary: #ffffff;
+    --color-line: #e5e5e5;
+    --color-accent-secondary: #f5f5f5;
     --color-accent-primary: #f97316;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #999999; */
+    --color-text-primary: #0a0a0a;
+    --color-text-secondary: #737373;
+}
 
+/* Light theme (default) - override @theme values */
+:root {
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-primary: #ffffff;
+    --color-line: #e5e5e5;
+    --color-accent-secondary: #f5f5f5;
+    --color-accent-primary: #f97316;
+    --color-text-primary: #0a0a0a;
+    --color-text-secondary: #737373;
+}
+
+/* Dark theme - override when .dark class is present */
+.dark {
     --color-bg-secondary: #171717;
     --color-bg-primary: #0a0a0a;
     --color-line: #333333;
@@ -30,4 +45,12 @@
     --color-accent-primary: #f97316;
     --color-text-primary: #ffffff;
     --color-text-secondary: #999999;
+}
+
+/* Smooth color transitions for theme switching */
+* {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }

@@ -20,7 +20,6 @@ const images = [
 export default function belajarEraDigital() {
     return (
         <>
-            <Navbar />
             <ProjectHero
                 title="Belajar Era Digital"
                 description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
     return (
-        <div className="border-b-line mx-auto border-b">
-            <div className="border-x-line mx-0 flex justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
+        <div className="border-b-line bg-bg-secondary/60 fixed top-0 z-50 mx-auto flex h-[65px] w-full items-center border-b backdrop-blur-xl">
+            <div className="border-x-line mx-0 flex h-full w-full items-center justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
                 <Link
                     to="/"
-                    className="bg-accent-primary my-3.5 flex aspect-square w-[41px] items-center justify-center"
+                    className="bg-accent-primary flex aspect-square h-fit w-[41px] items-center justify-center"
                 >
                     <svg
                         className="fill-white"
@@ -48,10 +49,11 @@ export default function Navbar() {
                         />
                     </svg>
                 </Link>
-                <div className="border-l-line flex items-center justify-between border-l pl-9">
+                <div className="border-l-line flex h-full items-center gap-6 border-l pl-9">
                     <Link className="text-text-primary hover:text-accent-primary font-semibold transition-colors">
                         GitHub
                     </Link>
+                    <ThemeToggle />
                 </div>
             </div>
         </div>

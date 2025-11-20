@@ -9,6 +9,7 @@ import CV from "./pages/CV";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
+import { ThemeProvider } from "./contexts/ThemeProvider";
 
 import "./index.css";
 
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <ThemeProvider>
+            <RouterProvider router={router} />
+        </ThemeProvider>
     </React.StrictMode>,
 );
