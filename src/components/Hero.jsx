@@ -50,7 +50,7 @@ export default function Hero() {
                         <Image
                             urlEndpoint="https://ik.imagekit.io/dnrx/danarx/ui/"
                             src="/hero.png"
-                            className="aspect-auto h-full w-full object-cover"
+                            className="aspect-auto h-[40vh] w-full object-cover md:h-full"
                             alt="Picture of the author"
                         />
                     </div>
