@@ -1,7 +1,7 @@
 import React from "react";
-import ProjectHero from "../../components/ProjectHero";
-import ProjectInfo from "../../components/ProjectInfo";
-import ProjectGallery from "../../components/ProjectGallery";
+import ProjectHero from "@/components/ProjectHero";
+import ProjectInfo from "@/components/ProjectInfo";
+import ProjectGallery from "@/components/ProjectGallery";
 
 const images = [
     "/img/project/belajar-era-digital/1.png",
