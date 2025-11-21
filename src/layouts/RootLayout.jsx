@@ -1,8 +1,13 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 
 export default function RootLayout() {
+    useEffect(() => {
+        document.title = "My Website";
+    }, []);
+
     return (
         <>
             {/* You can add a shared header or navbar here if needed */}

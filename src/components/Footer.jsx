@@ -31,7 +31,7 @@ export default function Footer() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="border-t-line md:border-t-none md:border-l-line max-w-[470px] border-t px-5 py-7 md:border-l md:px-9 md:py-9">
+                        <div className="md:border-l-line border-t-line max-w-[470px] border-t px-5 py-7 md:border-t-0 md:border-l md:px-9 md:py-9">
                             <p className="text-text-primary mr-7 max-w-[345px] text-base md:mr-8">
                                 Go check my YouTube Channel for chill content
                                 about web development and web design

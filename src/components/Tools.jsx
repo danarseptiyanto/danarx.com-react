@@ -70,7 +70,7 @@ export default function Tools() {
                                 >
                                     <path d="M-0.917969 0H44.082V27.4909H-0.917969V0Z" />
                                 </mask>
-                                <g mask="url(#mask0_187_55)">
+                                <g mask="">
                                     <path
                                         fillRule="evenodd"
                                         clipRule="evenodd"

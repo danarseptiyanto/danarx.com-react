@@ -9,6 +9,7 @@ import CV from "./pages/CV";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
+import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./contexts/ThemeProvider";
 
 import "./index.css";
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <RootLayout />,
+        errorElement: <NotFound />,
         children: [
             { index: true, element: <App /> },
             { path: "cv", element: <CV /> },
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
                 path: "project/belajar-era-digital",
                 element: <BelajarEraDigital />,
             },
+            { path: "*", element: <NotFound /> },
         ],
     },
 ]);

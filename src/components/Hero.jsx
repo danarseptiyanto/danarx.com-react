@@ -7,7 +7,7 @@ import { Image } from "@imagekit/react";
 export default function Hero() {
     return (
         <>
-            <div className="border-b-line mx-auto border-b">
+            <div className="border-b-line bg-bg-secondary mx-auto border-b">
                 <div className="border-x-line mx-0 flex grid-cols-2 flex-col-reverse border-x-0 md:mx-10 md:grid md:border-x">
                     <div className="border-r-line border-r">
                         <div className="border-b-line border-b px-5 py-6 md:px-9">
@@ -46,12 +46,11 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-line">
+                    <div className="bg-line border-line border-b md:border-b-0">
                         <Image
                             urlEndpoint="https://ik.imagekit.io/dnrx/danarx/ui/"
                             src="/hero.png"
                             className="aspect-auto h-[40vh] w-full object-cover md:h-full"
-                            alt="Picture of the author"
                         />
                     </div>
                 </div>
