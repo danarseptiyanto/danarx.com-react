@@ -7,7 +7,8 @@ export default function RootLayout() {
         <>
             {/* You can add a shared header or navbar here if needed */}
             <Navbar />
-            <main className="bg-bg-primary mt-[65px]">
+            <div className="bg-bg-secondary h-[65px]"></div>
+            <main className="bg-bg-primary">
                 <Outlet /> {/* ✅ This renders the current page */}
             </main>
             <Footer />

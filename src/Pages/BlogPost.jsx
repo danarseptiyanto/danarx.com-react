@@ -2,8 +2,6 @@
 import { useParams, Link } from "react-router-dom";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { Image } from "@imagekit/react";
 
 const posts = import.meta.glob("../blog/*.md", {
@@ -28,7 +26,6 @@ export default function BlogPost() {
 
     return (
         <>
-            <Navbar />
             <div className="border-b-line mx-auto border-b">
                 <div className="border-x-line mx-0 flex justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
                     <div className="prose prose-md md:prose-xl prose-invert mx-auto max-w-4xl py-7 md:py-10">
@@ -63,7 +60,6 @@ export default function BlogPost() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

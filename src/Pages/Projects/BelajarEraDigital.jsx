@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import ProjectHero from "../../components/ProjectHero";
 import ProjectInfo from "../../components/ProjectInfo";
 import ProjectGallery from "../../components/ProjectGallery";
@@ -33,7 +31,6 @@ export default function belajarEraDigital() {
                 technology="The BelajarEraDigital.com website uses modern web technologies to deliver its educational content effectively online. While specific technical details of the stack are not explicitly listed, based on standard practices for such platforms"
             />
             <ProjectGallery images={images} />
-            <Footer />
         </>
     );
 }
