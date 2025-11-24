@@ -55,7 +55,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="border-b-line mx-auto border-b">
+            <div className="border-b-line bg-bg-secondary mx-auto border-b">
                 <div className="border-x-line mx-0 border-x-0 py-4 md:mx-10 md:border-x md:py-7"></div>
             </div>
         </>

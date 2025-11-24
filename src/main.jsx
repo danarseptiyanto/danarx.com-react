@@ -1,4 +1,3 @@
-// main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -21,7 +20,6 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             { index: true, element: <App /> },
-            { path: "cv", element: <CV /> },
             { path: "blog", element: <BlogList /> },
             { path: "blog/:slug", element: <BlogPost /> },
             {
@@ -30,6 +28,10 @@ const router = createBrowserRouter([
             },
             { path: "*", element: <NotFound /> },
         ],
+    },
+    {
+        path: "/cv",
+        element: <CV />,
     },
 ]);
 

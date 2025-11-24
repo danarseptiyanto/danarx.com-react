@@ -60,8 +60,8 @@ export default function Navbar() {
                             />
                         </svg>
                     </Link>
-                    <div className="diborder-l flex h-full items-center">
-                        <div className="hidden h-full items-center gap-7 pr-7 md:flex">
+                    <div className="flex h-full items-center">
+                        <div className="border-line hidden h-full items-center gap-7 border-r pr-7 md:flex">
                             <Link
                                 to="/"
                                 className="text-text-primary hover:text-accent-primary flex h-full items-center font-semibold transition-colors"
@@ -69,16 +69,22 @@ export default function Navbar() {
                                 Home
                             </Link>
                             <Link
-                                to="/projects"
+                                to="/#projects"
                                 className="text-text-primary hover:text-accent-primary flex h-full items-center font-semibold transition-colors"
                             >
                                 Projects
                             </Link>
                             <Link
-                                to="/writings"
+                                to="/#writings"
                                 className="text-text-primary hover:text-accent-primary flex h-full items-center font-semibold transition-colors"
                             >
                                 Writings
+                            </Link>
+                            <Link
+                                to="/cv"
+                                className="text-text-primary hover:text-accent-primary flex h-full items-center font-semibold transition-colors"
+                            >
+                                CV
                             </Link>
                         </div>
                         <ThemeToggle />
@@ -89,7 +95,6 @@ export default function Navbar() {
                             Contact
                         </Link>
                         {/* Mobile menu button */}
-
                         <button
                             onClick={toggleMobileMenu}
                             className="text-text-primary hover:bg-accent-primary/80 bg-accent-primary border-line hover:text-accent-primary relative flex aspect-square h-full cursor-pointer items-center justify-center border-l transition-colors md:hidden"

@@ -40,7 +40,10 @@ const blogPosts = Object.entries(posts)
 export default function Writings() {
     return (
         <>
-            <div id="writing" className="border-b-line mx-auto border-b">
+            <div
+                id="writings"
+                className="border-b-line mx-auto scroll-mt-[65px] border-b"
+            >
                 <div className="border-x-line border-x-0 md:mx-10 md:border-x">
                     <div className="px-5 py-6 md:px-9 md:py-9">
                         <p className="text-text-primary mb-2.5 text-xl font-semibold md:text-[32px]">

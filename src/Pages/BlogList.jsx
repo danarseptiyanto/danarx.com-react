@@ -12,7 +12,11 @@ const posts = import.meta.glob("../blog/*.md", {
 
 const blogPosts = Object.entries(posts).map(([path, content]) => {
     const slug = path.split("/").pop().replace(".md", "");
-    const { data } = matter(content);
+    const { data } = matter(content, {
+        engines: {
+            javascript: false,
+        },
+    });
     return {
         slug,
         title: data.title,

@@ -5,6 +5,10 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+    server: {
+        port: 3000, // Change this to your desired port
+        historyApiFallback: true, // Enable SPA routing for direct URL access
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
         alias: {

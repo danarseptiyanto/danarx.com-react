@@ -9,11 +9,9 @@ export function ThemeProvider({ children }) {
     const [theme, setTheme] = useState(() => {
         // Check localStorage for saved theme preference
         const savedTheme = localStorage.getItem("theme");
-        // If no saved theme, check system preference
+        // If no saved theme, default to light mode
         if (!savedTheme) {
-            return window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? "dark"
-                : "light";
+            return "light";
         }
         return savedTheme;
     });

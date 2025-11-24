@@ -7,7 +7,7 @@ import ButttonFooter from "./Buttons/ButttonFooter";
 export default function Footer() {
     return (
         <>
-            <div className="border-b-line mx-auto border-b">
+            <div className="border-b-line bg-bg-primary mx-auto border-b">
                 <div className="border-x-line border-x-0 md:mx-10 md:border-x">
                     <div className="flex flex-col justify-between md:flex-row">
                         <div className="px-5 py-7 md:px-9 md:py-9">
@@ -48,7 +48,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="border-b-line mx-auto border-b">
+            <div className="border-b-line bg-bg-primary mx-auto border-b">
                 <div className="border-x-line mx-0 flex h-[85px] items-center justify-center border-x-0 md:mx-10 md:justify-between md:border-x md:px-9">
                     <div className="text-text-primary text-base md:text-lg">
                         Danar Septiyanto © 2025

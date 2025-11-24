@@ -7,7 +7,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            className="text-text-primary hover:bg-accent-primary/20 border-line hover:text-accent-primary relative flex aspect-square h-full cursor-pointer items-center justify-center border-l px-7 transition-colors md:aspect-auto"
+            className="text-text-primary hover:bg-accent-primary/20 hover:text-accent-primary relative flex aspect-square h-full cursor-pointer items-center justify-center px-7 transition-colors md:aspect-auto"
             aria-label="Toggle theme"
         >
             {/* Sun icon for light mode */}

@@ -21,7 +21,11 @@ export default function BlogPost() {
             </div>
         );
 
-    const { data, content } = matter(file);
+    const { data, content } = matter(file, {
+        engines: {
+            javascript: false,
+        },
+    });
     const html = marked(content);
 
     return (
