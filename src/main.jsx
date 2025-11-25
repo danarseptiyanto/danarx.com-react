@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import App from "./App";
 import CV from "./pages/CV";
-import Contact from "./pages/Contact";
+import { Contact, ContactSuccess } from "./pages/Contact";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
             { index: true, element: <App /> },
             { path: "blog", element: <BlogList /> },
             { path: "contact", element: <Contact /> },
+            { path: "contact-success", element: <ContactSuccess /> },
             { path: "blog/:slug", element: <BlogPost /> },
             {
                 path: "project/belajar-era-digital",
