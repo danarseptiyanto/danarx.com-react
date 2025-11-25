@@ -10,6 +10,11 @@ const projectsData = [
         slug: "belajar-era-digital",
     },
     {
+        thumbnail: "project1.png",
+        title: "Bedlink",
+        slug: "bedlink-id",
+    },
+    {
         thumbnail: "project2.png",
         title: "Surat Binusa",
         slug: "belajar-era-digital",
@@ -17,11 +22,6 @@ const projectsData = [
     {
         thumbnail: "project3.png",
         title: "TicyKit",
-        slug: "belajar-era-digital",
-    },
-    {
-        thumbnail: "project1.png",
-        title: "Belajar Era Digital",
         slug: "belajar-era-digital",
     },
 ];

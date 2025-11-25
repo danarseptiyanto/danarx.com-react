@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonPrimary from "./Buttons/ButttonPrimary";
 
 export default function ProjectInfo({
     client,
@@ -6,6 +7,7 @@ export default function ProjectInfo({
     projectDate,
     projectInfo,
     technology,
+    url,
 }) {
     return (
         <div className="border-b-line mx-auto border-b">
@@ -36,6 +38,9 @@ export default function ProjectInfo({
                                 {projectDate}
                             </p>
                         </div>
+                        <a href={url} target="_blank">
+                            <ButtonPrimary label="Visit Website" />
+                        </a>
                     </div>
                     <div className="max-w-[723px] space-y-6 pt-8 pb-3 md:pt-0 md:pb-0">
                         <div className="space-y-2 md:space-y-3">
