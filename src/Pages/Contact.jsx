@@ -33,47 +33,47 @@ export function Contact() {
                 method="POST"
                 className="border-b-line mx-auto border-b"
             >
-                <div className="border-x-line grid grid-cols-2 border-x-0 md:mx-10 md:border-x">
-                    <div className="border-line border-r border-b px-5 py-5 md:px-9 md:py-5">
+                <div className="border-x-line grid grid-cols-1 border-x-0 md:mx-10 md:grid-cols-2 md:border-x">
+                    <div className="border-line border-r border-b px-5 py-3 md:px-9 md:py-5">
                         <input
                             type="text"
                             name="name"
-                            className="text-text-primary w-full border-none bg-transparent text-xl outline-none md:text-xl"
+                            className="text-text-primary w-full border-none bg-transparent text-lg outline-none md:text-xl"
                             placeholder="Name *"
                             required
                         />
                     </div>
-                    <div className="border-line border-b px-5 py-5 md:px-9 md:py-5">
+                    <div className="border-line border-b px-5 py-3 md:px-9 md:py-5">
                         <input
                             type="email"
                             name="email"
-                            className="text-text-primary w-full border-none bg-transparent text-xl outline-none md:text-xl"
+                            className="text-text-primary w-full border-none bg-transparent text-lg outline-none md:text-xl"
                             placeholder="Email *"
                             required
                         />
                     </div>
-                    <div className="border-line border-r border-b px-5 py-5 md:px-9 md:py-5">
+                    <div className="border-line border-r border-b px-5 py-3 md:px-9 md:py-5">
                         <input
                             type="tel"
                             name="phone"
-                            className="text-text-primary w-full border-none bg-transparent text-xl outline-none md:text-xl"
+                            className="text-text-primary w-full border-none bg-transparent text-lg outline-none md:text-xl"
                             placeholder="Phone"
                         />
                     </div>
-                    <div className="border-line border-b px-5 py-5 md:px-9 md:py-5">
+                    <div className="border-line border-b px-5 py-3 md:px-9 md:py-5">
                         <input
                             type="text"
                             name="job"
-                            className="text-text-primary w-full border-none bg-transparent text-xl outline-none md:text-xl"
+                            className="text-text-primary w-full border-none bg-transparent text-lg outline-none md:text-xl"
                             placeholder="Jobs"
                         />
                     </div>
                 </div>
                 <div className="border-x-line flex flex-1 flex-col border-x-0 md:mx-10 md:border-x">
-                    <div className="flex flex-1 flex-col px-5 py-5 md:px-9 md:py-5">
+                    <div className="flex flex-1 flex-col px-5 py-3 md:px-9 md:py-5">
                         <textarea
                             name="message"
-                            className="text-text-primary h-full w-full resize-none border-none bg-transparent text-xl outline-none md:text-xl"
+                            className="text-text-primary h-full w-full resize-none border-none bg-transparent text-lg outline-none md:text-xl"
                             placeholder="Message *"
                             rows="20"
                             required
@@ -82,13 +82,13 @@ export function Contact() {
                         <input
                             type="hidden"
                             name="_next"
-                            value="https://google.com"
+                            value="https://danarx.com/contact-success"
                         />
                         <input type="hidden" name="_captcha" value="false" />
                     </div>
                     <button
                         type="submit"
-                        className="bg-accent-primary text-text-primary hover:bg-accent-primary/80 border-line flex h-[65px] cursor-pointer items-center justify-center border-t px-5 text-xl font-semibold transition-colors duration-200"
+                        className="bg-accent-primary text-text-primary hover:bg-accent-primary/80 border-line m-5 flex h-[65px] cursor-pointer items-center justify-center border-t px-5 text-base font-semibold transition-colors duration-200 md:m-0 md:text-xl"
                     >
                         Send Message
                     </button>
