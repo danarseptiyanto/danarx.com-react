@@ -49,7 +49,7 @@ export default function Writings() {
                         <p className="text-text-primary mb-2.5 text-xl font-semibold md:text-[32px]">
                             Writings
                         </p>
-                        <p className="text-text-secondary max-w-[821px] text-base md:text-xl">
+                        <p className="text-text-primary max-w-[821px] text-base md:text-xl">
                             We are the creators, maintainers, and contributors
                             of some of the most critical infrastructure projects
                             in the JavaScript ecosystem.

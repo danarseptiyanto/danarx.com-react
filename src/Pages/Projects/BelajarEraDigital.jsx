@@ -22,9 +22,10 @@ export default function belajarEraDigital() {
             <ProjectHero
                 title="Belajar Era Digital"
                 description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."
-                heroImage="/img/ui/project-long4.png"
+                heroImage="/belajar-era-digital/project-long2.png"
             />
             <ProjectInfo
+                url="https://belajareradigital.com"
                 client="Belajar Era Digital"
                 clientDescription="Educational Platform"
                 projectDate="September 2024"

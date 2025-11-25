@@ -34,7 +34,10 @@ export default function Hero() {
                                 >
                                     <path d="M64.0148 37.6568L29.5885 72.0832L23.9316 66.4264L58.358 32H28.0149V24H72.0148V68H64.0148V37.6568Z" />
                                 </svg> */}
-                                <img src="img/ui/avatar2.png" alt="" />
+                                <Image
+                                    urlEndpoint="https://ik.imagekit.io/dnrx/danarx/"
+                                    src="ui/avatar.jpg"
+                                />
                             </div>
                             <div className="grid w-full grid-cols-2">
                                 <LinksHero url="#" name="Github" />

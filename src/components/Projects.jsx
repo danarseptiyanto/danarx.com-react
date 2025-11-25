@@ -36,7 +36,7 @@ function ProjectCard({ thumbnail, title, slug }) {
             <Image
                 urlEndpoint="https://ik.imagekit.io/dnrx/danarx/thumbnail-project/"
                 src={thumbnail}
-                className="bg-line aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="bg-line aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[101%]"
             />
             <div className="from-accent-primary absolute right-0 bottom-0 left-0 bg-linear-to-tr via-transparent to-transparent px-2 pt-8 pb-2 md:hidden">
                 <p className="text-sm font-semibold text-white md:text-xl">

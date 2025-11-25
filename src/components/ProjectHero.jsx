@@ -1,5 +1,6 @@
 import React from "react";
 import PlusIconHero from "./PlusIconHero";
+import { Image } from "@imagekit/react";
 
 export default function ProjectHero({ title, description, heroImage }) {
     return (
@@ -17,15 +18,16 @@ export default function ProjectHero({ title, description, heroImage }) {
                                     {title}
                                 </h1>
                             </div>
-                            <p className="max-w-[700px] text-lg text-white md:text-xl">
+                            <p className="text-text-primary max-w-[700px] text-lg md:text-xl">
                                 {description}
                             </p>
                         </div>
                         <PlusIconHero />
                     </div>
-                    <img
-                        className="bg-accent-secondary border-line h-28 w-full border-t object-cover object-top md:h-90"
+                    <Image
+                        urlEndpoint="https://ik.imagekit.io/dnrx/danarx/project/"
                         src={heroImage}
+                        className="bg-accent-secondary border-line h-28 w-full border-t object-cover object-top md:h-90"
                         alt={title}
                     />
                 </div>
