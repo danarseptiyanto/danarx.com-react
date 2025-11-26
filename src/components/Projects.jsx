@@ -5,24 +5,24 @@ import { Image } from "@imagekit/react";
 // Projects data array - add your projects here
 const projectsData = [
     {
-        thumbnail: "project1.png",
+        thumbnail: "belajareradigital.png",
         title: "Belajar Era Digital",
         slug: "belajar-era-digital",
     },
     {
-        thumbnail: "project1.png",
+        thumbnail: "bedlink-id.png",
         title: "Bedlink",
         slug: "bedlink-id",
     },
     {
-        thumbnail: "project2.png",
+        thumbnail: "surat-binusa.png",
         title: "Surat Binusa",
-        slug: "belajar-era-digital",
+        slug: "surat-binusa",
     },
     {
-        thumbnail: "project3.png",
+        thumbnail: "ticykit.png",
         title: "TicyKit",
-        slug: "belajar-era-digital",
+        slug: "ticykit",
     },
 ];
 
