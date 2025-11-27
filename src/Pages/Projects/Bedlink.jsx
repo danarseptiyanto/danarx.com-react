@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectHero from "@/components/ProjectHero";
-import ProjectInfo from "@/components/ProjectInfo";
+import { ProjectContent, ProjectInfo } from "@/components/ProjectInfo";
 import ProjectGallery from "@/components/ProjectGallery";
 import useTitle from "@/hooks/useTitle";
 
@@ -30,9 +30,35 @@ export default function Bedlink() {
                 client="Belajar Era Digital"
                 clientDescription="Educational Platform"
                 projectDate="September 2024"
-                projectInfo="Bedlink.id is an educational platform aimed at improving the competence and quality of teaching for educators and students in Indonesia by leveraging digital technology. It provides free online training programs, e-courses, and innovative learning resources accessible anytime and anywhere. The platform supports teachers and learners through interactive content and community engagement to enhance digital era learning. The platform encourages lifelong learning and adaptation to digital transformation in education, offering courses and materials for teachers, students, and even university-level learning, all designed to be flexible, accessible, and innovative. It is a comprehensive resource for those looking to develop digital literacy and effective learning strategies in the modern age. The website also connects with social media channels and offers certifications for training participation to motivate and support a growing learning community."
-                technology="The BelajarEraDigital.com website uses modern web technologies to deliver its educational content effectively online. While specific technical details of the stack are not explicitly listed, based on standard practices for such platforms"
-            />
+            >
+                <ProjectContent title="Project Info">
+                    BelajarEraDigital.com is an educational platform aimed at
+                    improving the competence and quality of teaching for
+                    educators and students in Indonesia by leveraging digital
+                    technology. It provides free online training programs,
+                    e-courses, and innovative learning resources accessible
+                    anytime and anywhere. The platform supports teachers and
+                    learners through interactive content and community
+                    engagement to enhance digital era learning. The platform
+                    encourages lifelong learning and adaptation to digital
+                    transformation in education, offering courses and materials
+                    for teachers, students, and even university-level learning,
+                    all designed to be flexible, accessible, and innovative. It
+                    is a comprehensive resource for those looking to develop
+                    digital literacy and effective learning strategies in the
+                    modern age. The website also connects with social media
+                    channels and offers certifications for training
+                    participation to motivate and support a growing learning
+                    community.
+                </ProjectContent>
+                <ProjectContent title="Technology">
+                    The BelajarEraDigital.com website uses modern web
+                    technologies to deliver its educational content effectively
+                    online. While specific technical details of the stack are
+                    not explicitly listed, based on standard practices for such
+                    platforms
+                </ProjectContent>
+            </ProjectInfo>
             <ProjectGallery
                 images={images}
                 urlEndpoint="https://ik.imagekit.io/dnrx/danarx/"

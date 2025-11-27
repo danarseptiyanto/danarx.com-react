@@ -14,6 +14,8 @@ import { ThemeProvider } from "./contexts/ThemeProvider";
 
 import "./index.css";
 import Bedlink from "./Pages/Projects/Bedlink";
+import SuratBinusa from "./Pages/Projects/SuratBinusa";
+import TicyKit from "./Pages/Projects/TicyKit";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
             {
                 path: "project/bedlink-id",
                 element: <Bedlink />,
+            },
+            {
+                path: "project/surat-binusa",
+                element: <SuratBinusa />,
+            },
+            {
+                path: "project/ticykit",
+                element: <TicyKit />,
             },
             { path: "*", element: <NotFound /> },
         ],

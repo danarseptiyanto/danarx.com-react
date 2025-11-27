@@ -1,13 +1,12 @@
 import React from "react";
 import ButtonPrimary from "./Buttons/ButttonPrimary";
 
-export default function ProjectInfo({
+export function ProjectInfo({
     client,
     clientDescription,
     projectDate,
-    projectInfo,
-    technology,
     url,
+    children,
 }) {
     return (
         <div className="border-b-line mx-auto border-b">
@@ -43,25 +42,23 @@ export default function ProjectInfo({
                         </a>
                     </div>
                     <div className="max-w-[723px] space-y-6 pt-8 pb-3 md:pt-0 md:pb-0">
-                        <div className="space-y-2 md:space-y-3">
-                            <h2 className="text-text-primary text-xl font-semibold md:text-3xl">
-                                Project info
-                            </h2>
-                            <p className="text-text-primary max-w-[723px] leading-relaxed md:text-lg">
-                                {projectInfo}
-                            </p>
-                        </div>
-                        <div className="space-y-2 md:space-y-3">
-                            <h2 className="text-text-primary text-xl font-semibold md:text-3xl">
-                                Technology
-                            </h2>
-                            <p className="text-text-primary max-w-[723px] leading-relaxed md:text-lg">
-                                {technology}
-                            </p>
-                        </div>
+                        {children}
                     </div>
                 </div>
             </div>
+        </div>
+    );
+}
+
+export function ProjectContent({ title, children }) {
+    return (
+        <div className="space-y-2 md:space-y-3">
+            <h2 className="text-text-primary text-xl font-semibold md:text-3xl">
+                {title}
+            </h2>
+            <p className="text-text-primary max-w-[723px] leading-relaxed md:text-lg">
+                {children}
+            </p>
         </div>
     );
 }
