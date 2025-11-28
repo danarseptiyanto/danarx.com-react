@@ -53,9 +53,8 @@ export default function belajarEraDigital() {
                 <ProjectContent title="Technology">
                     The BelajarEraDigital.com website uses modern web
                     technologies to deliver its educational content effectively
-                    online. While specific technical details of the stack are
-                    not explicitly listed, based on standard practices for such
-                    platforms
+                    online. Thos tools inlcuding: Laravel, Tailwind CSS, mySQL,
+                    and Hostinger as the web host.
                 </ProjectContent>
             </ProjectInfo>
             <ProjectGallery

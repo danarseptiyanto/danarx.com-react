@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "@imagekit/react";
 
 export default function ProjectGallery({ images, urlEndpoint }) {
     const defaultUrlEndpoint = "https://ik.imagekit.io/dnrx/danarx/";
+
+    const [popup, setPopup] = useState({
+        open: false,
+        src: null,
+    });
 
     return (
         <div className="border-x-line border-b-line border-x-0 border-b md:mx-10 md:border-x">
@@ -13,14 +18,32 @@ export default function ProjectGallery({ images, urlEndpoint }) {
                             <Image
                                 urlEndpoint={urlEndpoint || defaultUrlEndpoint}
                                 src={src}
-                                className="mb-4 w-full object-cover"
+                                className="mb-4 w-full cursor-pointer object-cover"
                                 alt={`Gallery image ${index + 1}`}
                                 loading="lazy"
+                                onClick={() => setPopup({ open: true, src })}
                             />
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* Popup Only Loads Image When Open */}
+            {popup.open && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+                    onClick={() => setPopup({ open: false, src: null })}
+                >
+                    <div onClick={(e) => e.stopPropagation()}>
+                        <Image
+                            urlEndpoint={urlEndpoint || defaultUrlEndpoint}
+                            src={popup.src}
+                            alt="Full image"
+                            className="max-h-[95vh] max-w-[95vw] shadow-lg"
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
