@@ -17,46 +17,40 @@ const images = [
 ];
 
 export default function Bedlink() {
-    useTitle("Project Belajar Era Digital - Danar Septiyanto");
+    useTitle("Project BEDlink - Danar Septiyanto");
     return (
         <>
             <ProjectHero
-                title="Bedlink"
-                description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."
+                title="BEDlink"
+                description="BEDlink is a simple, customizable platform that lets you organize and share all your important links—like social media and websites—in one clean, easy-to-share page. just add your links, arrange them, and share."
                 heroImage="/bedlink-id/project-long3.png"
             />
             <ProjectInfo
-                url="https://belajareradigital.com"
-                client="Belajar Era Digital"
-                clientDescription="Educational Platform"
-                projectDate="September 2024"
+                url="https://bedlink.id"
+                client="BEDlink"
+                clientDescription="Link Sharing Platform"
+                projectDate="October 2024"
             >
                 <ProjectContent title="Project Info">
-                    BelajarEraDigital.com is an educational platform aimed at
-                    improving the competence and quality of teaching for
-                    educators and students in Indonesia by leveraging digital
-                    technology. It provides free online training programs,
-                    e-courses, and innovative learning resources accessible
-                    anytime and anywhere. The platform supports teachers and
-                    learners through interactive content and community
-                    engagement to enhance digital era learning. The platform
-                    encourages lifelong learning and adaptation to digital
-                    transformation in education, offering courses and materials
-                    for teachers, students, and even university-level learning,
-                    all designed to be flexible, accessible, and innovative. It
-                    is a comprehensive resource for those looking to develop
-                    digital literacy and effective learning strategies in the
-                    modern age. The website also connects with social media
-                    channels and offers certifications for training
-                    participation to motivate and support a growing learning
-                    community.
+                    BEDlink is a platform designed to make it easier for you to
+                    share all your important links in one place. With BEDlink,
+                    you can create your own personal page containing essential
+                    links such as social media, websites, and more, all neatly
+                    organized into a single link that’s easy to share or place
+                    in your social media bio. BEDlink is the perfect solution
+                    for creators, business owners, or anyone who wants a simpler
+                    way to share their important links. With a modern look and
+                    flexible, fully customizable features, you can tailor your
+                    BEDlink page to match your identity and needs. Ease of use
+                    is at the core of our design. In just minutes, you can
+                    create and personalize your BEDlink page, no technical
+                    skills required. Simply add your links, arrange them, and
+                    share them with your audience!
                 </ProjectContent>
                 <ProjectContent title="Technology">
-                    The BelajarEraDigital.com website uses modern web
-                    technologies to deliver its educational content effectively
-                    online. While specific technical details of the stack are
-                    not explicitly listed, based on standard practices for such
-                    platforms
+                    BEDlink.id website uses modern web technologies like Laravel
+                    as the backend framework, Tailwind CSS for styling, and
+                    MySQL as the database. It is hosted on Hostinger.
                 </ProjectContent>
             </ProjectInfo>
             <ProjectGallery

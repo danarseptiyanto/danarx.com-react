@@ -17,7 +17,8 @@ export default function TicyKit() {
         <>
             <ProjectHero
                 title="TicyKit"
-                description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."
+                description="Online education platform that provides downloadable teaching materials like worksheets, e-books, and lesson modules. It helps teachers prepare classroom content more easily with ready-made resources.
+"
                 heroImage="/ticykit/ticykit-thumb.png"
             />
             <ProjectInfo
@@ -27,29 +28,25 @@ export default function TicyKit() {
                 projectDate="September 2024"
             >
                 <ProjectContent title="Project Info">
-                    TicyKit is an educational platform aimed at improving the
-                    competence and quality of teaching for educators and
-                    students in Indonesia by leveraging digital technology. It
-                    provides free online training programs, e-courses, and
-                    innovative learning resources accessible anytime and
-                    anywhere. The platform supports teachers and learners
-                    through interactive content and community engagement to
-                    enhance digital era learning. The platform encourages
-                    lifelong learning and adaptation to digital transformation
-                    in education, offering courses and materials for teachers,
-                    students, and even university-level learning, all designed
-                    to be flexible, accessible, and innovative. It is a
-                    comprehensive resource for those looking to develop digital
-                    literacy and effective learning strategies in the modern
-                    age. The website also connects with social media channels
-                    and offers certifications for training participation to
-                    motivate and support a growing learning community.
+                    TicyKit is an online educational platform that provides a
+                    collection of digital learning materials aimed at teachers,
+                    students, and parents. It offers resources such as
+                    worksheets, e-books, teaching modules, and presentation
+                    materials designed to support classroom learning and lesson
+                    preparation. The platform focuses on age-appropriate and
+                    curriculum-aligned content, helping educators create
+                    structured teaching plans through tools like modul ajar and
+                    ATP generators. Although it appears to operate as part of
+                    Belajar Era Digital rather than under its own standalone
+                    domain, TicyKit serves as a centralized space for practical
+                    and easy-to-use teaching resources that can be downloaded
+                    and applied directly in educational settings.
                 </ProjectContent>
                 <ProjectContent title="Technology">
-                    The TicyKit website uses modern web technologies to deliver
-                    its educational content effectively online. While specific
-                    technical details of the stack are not explicitly listed,
-                    based on standard practices for such platforms
+                    TicyKit website uses Laravel as the backend framework,
+                    Laravel Blade as templating engine, Tailwind CSS for
+                    styling, and MySQL as the database. It is hosted on
+                    Hostinger.
                 </ProjectContent>
             </ProjectInfo>
             <ProjectGallery

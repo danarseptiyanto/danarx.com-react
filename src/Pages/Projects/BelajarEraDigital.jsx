@@ -21,7 +21,7 @@ export default function belajarEraDigital() {
         <>
             <ProjectHero
                 title="Belajar Era Digital"
-                description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."
+                description="A teacher development platform dedicated to improving the quality of education in Indonesia by offering seminars, training programs, and teacher upskilling. All programs are free to join without any sign up fee."
                 heroImage="/belajar-era-digital/project-long2.png"
             />
             <ProjectInfo
@@ -51,10 +51,10 @@ export default function belajarEraDigital() {
                     community.
                 </ProjectContent>
                 <ProjectContent title="Technology">
-                    The BelajarEraDigital.com website uses modern web
-                    technologies to deliver its educational content effectively
-                    online. Thos tools inlcuding: Laravel, Tailwind CSS, mySQL,
-                    and Hostinger as the web host.
+                    The BelajarEraDigital.com website uses Laravel as the
+                    backend framework, Laravel Blade as templating engine,
+                    Tailwind CSS for styling, and MySQL as the database. It is
+                    hosted on Hostinger.
                 </ProjectContent>
             </ProjectInfo>
             <ProjectGallery
