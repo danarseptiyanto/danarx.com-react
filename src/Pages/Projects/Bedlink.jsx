@@ -27,9 +27,9 @@ export default function Bedlink() {
             />
             <ProjectInfo
                 url="https://bedlink.id"
-                client="BEDlink"
-                clientDescription="Link Sharing Platform"
-                projectDate="October 2024"
+                client="Belajar Era Digital"
+                clientDescription="Microsite Platform"
+                projectDate="September 2024"
             >
                 <ProjectContent title="Project Info">
                     BEDlink is a platform designed to make it easier for you to

@@ -9,9 +9,9 @@ export default function Tools() {
                         Tools
                     </p>
                     <p className="text-text-primary max-w-[821px] pb-1 text-base md:pb-2.5 md:text-xl">
-                        We are the creators, maintainers, and contributors of
-                        some of the most critical infrastructure projects in the
-                        JavaScript ecosystem.
+                        Here are some of the tools that I used to create
+                        websites and applications. I use them for my personal
+                        projects and for my clients depending on their needs.
                     </p>
                 </div>
                 <div className="md:border-t-line divide-line grid grid-cols-2 divide-x divide-y md:grid-cols-5 md:divide-y-0 md:border-t">

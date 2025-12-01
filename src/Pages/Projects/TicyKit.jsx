@@ -24,8 +24,8 @@ export default function TicyKit() {
             <ProjectInfo
                 url="https://ticykit.com"
                 client="TicyKit"
-                clientDescription="TicyKit"
-                projectDate="September 2024"
+                clientDescription="Online Education Platform"
+                projectDate="Desember 2023"
             >
                 <ProjectContent title="Project Info">
                     TicyKit is an online educational platform that provides a

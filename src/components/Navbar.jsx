@@ -143,7 +143,7 @@ export default function Navbar() {
                         isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
                 >
-                    <nav className="flex h-full flex-col">
+                    <nav className="flex h-[calc(100vh-65px)] flex-col">
                         {/* Navigation links */}
                         <div className="flex flex-col">
                             <Link
@@ -154,27 +154,23 @@ export default function Navbar() {
                                 Home
                             </Link>
                             <Link
-                                to="/projects"
+                                to="/#projects"
                                 onClick={closeMobileMenu}
                                 className="text-text-primary hover:bg-accent-secondary border-b-line flex items-center border-b px-8 py-6 text-lg font-semibold transition-colors"
                             >
                                 Projects
                             </Link>
                             <Link
-                                to="/writings"
+                                to="/#writings"
                                 onClick={closeMobileMenu}
                                 className="text-text-primary hover:bg-accent-secondary border-b-line flex items-center border-b px-8 py-6 text-lg font-semibold transition-colors"
                             >
                                 Writings
                             </Link>
-                        </div>
-
-                        {/* Contact button at bottom */}
-                        <div className="mt-auto p-8">
                             <Link
                                 to="/contact"
                                 onClick={closeMobileMenu}
-                                className="bg-accent-primary hover:bg-accent-primary/80 flex w-full items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-colors"
+                                className="text-text-primary hover:bg-accent-secondary border-b-line flex items-center border-b px-8 py-6 text-lg font-semibold transition-colors"
                             >
                                 Contact
                             </Link>

@@ -40,12 +40,24 @@ export default function Hero() {
                                 />
                             </div>
                             <div className="grid w-full grid-cols-2">
-                                <LinksHero url="#" name="Github" />
-                                <LinksHero url="#" name="Project" />
-                                <LinksHero url="#" name="Instagram" />
-                                <LinksHero url="#" name="Writing" />
-                                <LinksHero url="#" name="Dribbble" />
-                                <LinksHero url="#" name="Contact" />
+                                <LinksHero
+                                    target="_blank"
+                                    url="https://github.com/danarseptiyanto"
+                                    name="Github"
+                                />
+                                <LinksHero url="/#projects" name="Project" />
+                                <LinksHero
+                                    target="_blank"
+                                    url="https://www.instagram.com/dnrsept/"
+                                    name="Instagram"
+                                />
+                                <LinksHero url="/#writings" name="Writing" />
+                                <LinksHero
+                                    target="_blank"
+                                    url="https://dribbble.com/danarsepti"
+                                    name="Dribbble"
+                                />
+                                <LinksHero url="/contact" name="Contact" />
                             </div>
                         </div>
                     </div>

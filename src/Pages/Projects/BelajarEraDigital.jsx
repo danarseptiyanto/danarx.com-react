@@ -28,7 +28,7 @@ export default function belajarEraDigital() {
                 url="https://belajareradigital.com"
                 client="Belajar Era Digital"
                 clientDescription="Educational Platform"
-                projectDate="September 2024"
+                projectDate="November 2023"
             >
                 <ProjectContent title="Project Info">
                     BelajarEraDigital.com is an educational platform aimed at

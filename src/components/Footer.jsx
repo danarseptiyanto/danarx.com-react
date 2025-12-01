@@ -17,13 +17,16 @@ export default function Footer() {
                                 business to life.
                             </p>
                             <div className="mt-5 flex flex-col gap-2.5 md:flex-row">
-                                <Link href="#">
+                                <Link to="/contact">
                                     <ButtonPrimary
-                                        label="Contact Us"
+                                        label="Contact Me"
                                         type="button"
                                     />
                                 </Link>
-                                <Link href="#">
+                                <Link
+                                    target="_blank"
+                                    to="https://www.instagram.com/dnrsept/"
+                                >
                                     <ButttonSecondary
                                         label="DM me on Instagram"
                                         type="button"
@@ -37,7 +40,10 @@ export default function Footer() {
                                 about web development and web design
                             </p>
                             <div className="mt-5 md:mt-6">
-                                <Link href="#">
+                                <Link
+                                    target="_blank"
+                                    to="https://www.youtube.com/@danarseptiyanto4066"
+                                >
                                     <ButtonPrimary
                                         label="YouTube Channel"
                                         type="button"
@@ -54,12 +60,18 @@ export default function Footer() {
                         Danar Septiyanto © 2025
                     </div>
                     <div className="hidden items-center gap-5 md:flex">
-                        <Link href="#">
+                        <a
+                            target="_blank"
+                            href="https://github.com/danarseptiyanto/"
+                        >
                             <ButttonFooter label="GitHub" type="button" />
-                        </Link>
-                        <Link href="#">
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/dnrsept/"
+                        >
                             <ButttonFooter label="Instagram" type="button" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

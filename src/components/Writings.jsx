@@ -50,9 +50,9 @@ export default function Writings() {
                             Writings
                         </p>
                         <p className="text-text-primary max-w-[821px] text-base md:text-xl">
-                            We are the creators, maintainers, and contributors
-                            of some of the most critical infrastructure projects
-                            in the JavaScript ecosystem.
+                            Here are some of my writings and articles that I
+                            have written, usually about web development and
+                            programming, sometimes about my thoughts.
                         </p>
                     </div>
                     {blogPosts.map((post) => (

@@ -32,7 +32,7 @@ export default function BlogPost() {
         <>
             <div className="border-b-line mx-auto border-b">
                 <div className="border-x-line mx-0 flex justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
-                    <div className="prose prose-md md:prose-xl dark:prose-invert mx-auto max-w-4xl py-7 md:py-10">
+                    <div className="prose prose-md md:prose-xl dark:prose-invert prose-pre:overflow-x-auto prose-code:wrap-break-word prose-pre:max-w-full mx-auto max-w-full overflow-x-hidden py-7 md:max-w-4xl md:py-10">
                         <div className="-mb-2 flex items-center justify-between">
                             <Link
                                 className="inline-flex items-center gap-1.5 text-base no-underline md:text-lg"

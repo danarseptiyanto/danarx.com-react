@@ -24,9 +24,9 @@ export default function SuratBinusa() {
                 heroImage="/surat-binusa/surat-binusa-thumb.png"
             />
             <ProjectInfo
-                url="https://suratbinusa.com"
-                client="Surat Binusa"
-                clientDescription="Surat Binusa"
+                url="https://surat.binusa.my.id"
+                client="SMK Bina Nusantara"
+                clientDescription="Correspondence Portal"
                 projectDate="September 2024"
             >
                 <ProjectContent title="Project Info">

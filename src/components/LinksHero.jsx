@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function LinksHero({ url, name }) {
+export default function LinksHero({ url, name, ...rest }) {
     return (
         <Link
-            href={url}
+            to={url}
+            {...rest}
             className="border-t-line group hover:border-bg-accent-primary/80 hover:bg-accent-primary/90 flex items-center justify-between border-t pl-5 transition-colors duration-300 md:pl-6"
         >
             <p className="text-text-primary text-sm md:text-base">{name}</p>
