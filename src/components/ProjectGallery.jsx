@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { Image } from "@imagekit/react";
 
 export default function ProjectGallery({ images, urlEndpoint }) {
@@ -29,21 +30,23 @@ export default function ProjectGallery({ images, urlEndpoint }) {
             </div>
 
             {/* Popup Only Loads Image When Open */}
-            {popup.open && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
-                    onClick={() => setPopup({ open: false, src: null })}
-                >
-                    <div onClick={(e) => e.stopPropagation()}>
-                        <Image
-                            urlEndpoint={urlEndpoint || defaultUrlEndpoint}
-                            src={popup.src}
-                            alt="Full image"
-                            className="max-h-[95vh] max-w-[95vw] shadow-lg"
-                        />
-                    </div>
-                </div>
-            )}
+            {popup.open &&
+                createPortal(
+                    <div
+                        className="fixed inset-0 z-9999 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+                        onClick={() => setPopup({ open: false, src: null })}
+                    >
+                        <div onClick={(e) => e.stopPropagation()}>
+                            <Image
+                                urlEndpoint={urlEndpoint || defaultUrlEndpoint}
+                                src={popup.src}
+                                alt="Full image"
+                                className="max-h-[95vh] max-w-[95vw] shadow-lg"
+                            />
+                        </div>
+                    </div>,
+                    document.body,
+                )}
         </div>
     );
 }
