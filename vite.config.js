@@ -9,6 +9,16 @@ export default defineConfig({
         port: 3000, // Change this to your desired port
         historyApiFallback: true, // Enable SPA routing for direct URL access
     },
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ["react", "react-dom", "react-router-dom"],
+                    utils: ["marked", "gray-matter"],
+                },
+            },
+        },
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
         alias: {
