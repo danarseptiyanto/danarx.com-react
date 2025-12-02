@@ -1,0 +1,43 @@
+# robots.txt for danarx.com
+# Optimized for SEO and search engine crawling
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Allow crawling of main content areas
+Allow: /blog/
+Allow: /projects/
+Allow: /about
+Allow: /contact
+Allow: /cv
+
+# Block crawling of administrative and technical files
+Disallow: /admin/
+Disallow: /private/
+
+# Block crawling of assets that don't need indexing
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /vite.svg
+
+# Block crawling of source maps (if any)
+Disallow: /*.map$
+
+# Allow CSS and JS files for proper rendering in search results
+Allow: /*.css$
+Allow: /*.js$
+
+# Allow image indexing for better image SEO
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl delay (optional - only if needed to prevent server overload)
+# Crawl-delay: 1
+
+# Sitemap location (update this URL to your actual domain when deployed)
+# Sitemap: https://danarx.com/sitemap.xml
