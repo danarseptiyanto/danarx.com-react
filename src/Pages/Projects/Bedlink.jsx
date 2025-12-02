@@ -2,6 +2,7 @@ import React from "react";
 import ProjectHero from "@/components/ProjectHero";
 import { ProjectContent, ProjectInfo } from "@/components/ProjectInfo";
 import ProjectGallery from "@/components/ProjectGallery";
+import SEO from "@/components/SEO";
 import useTitle from "@/hooks/useTitle";
 
 const images = [
@@ -20,6 +21,10 @@ export default function Bedlink() {
     useTitle("Project BEDlink - Danar Septiyanto");
     return (
         <>
+            <SEO
+                title="BEDlink"
+                description="A customizable link-in-bio platform that lets you organize and share all your important links in one clean, easy-to-share page."
+            />
             <ProjectHero
                 title="BEDlink"
                 description="BEDlink is a simple, customizable platform that lets you organize and share all your important links—like social media and websites—in one clean, easy-to-share page. just add your links, arrange them, and share."

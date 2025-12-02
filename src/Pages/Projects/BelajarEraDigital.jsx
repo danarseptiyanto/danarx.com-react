@@ -2,6 +2,7 @@ import React from "react";
 import ProjectHero from "@/components/ProjectHero";
 import { ProjectInfo, ProjectContent } from "@/components/ProjectInfo";
 import ProjectGallery from "@/components/ProjectGallery";
+import SEO from "@/components/SEO";
 import useTitle from "@/hooks/useTitle";
 
 const images = [
@@ -19,6 +20,10 @@ export default function belajarEraDigital() {
     useTitle("Project Belajar Era Digital - Danar Septiyanto");
     return (
         <>
+            <SEO
+                title="Belajar Era Digital"
+                description="A teacher development platform offering free seminars, training programs, and upskilling courses to improve education quality in Indonesia."
+            />
             <ProjectHero
                 title="Belajar Era Digital"
                 description="A teacher development platform dedicated to improving the quality of education in Indonesia by offering seminars, training programs, and teacher upskilling. All programs are free to join without any sign up fee."

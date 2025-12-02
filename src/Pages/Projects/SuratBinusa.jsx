@@ -2,6 +2,7 @@ import React from "react";
 import ProjectHero from "@/components/ProjectHero";
 import { ProjectInfo, ProjectContent } from "@/components/ProjectInfo";
 import ProjectGallery from "@/components/ProjectGallery";
+import SEO from "@/components/SEO";
 import useTitle from "@/hooks/useTitle";
 
 const images = [
@@ -18,6 +19,10 @@ export default function SuratBinusa() {
     useTitle("Project Surat Binusa - Danar Septiyanto");
     return (
         <>
+            <SEO
+                title="Surat Binusa"
+                description="Official correspondence portal for SMK Bina Nusantara Semarang with QR code verification for document authenticity and streamlined letter management."
+            />
             <ProjectHero
                 title="Surat Binusa"
                 description="Hi, I'm Danar Septiyanto, a freelance fullstack web developer based in Indonesia. I'm currently working as a freelance web developer. I love to build web applications that solve real problems."

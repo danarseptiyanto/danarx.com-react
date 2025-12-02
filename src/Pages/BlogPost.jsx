@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { Image } from "@imagekit/react";
+import SEO from "@/components/SEO";
 
 const posts = import.meta.glob("../blog/*.md", {
     query: "?raw",
@@ -30,6 +31,13 @@ export default function BlogPost() {
 
     return (
         <>
+            <SEO
+                title={data.title}
+                description={
+                    data.description ||
+                    `Read ${data.title} - A blog post by Danar Septiyanto about web development and technology.`
+                }
+            />
             <div className="border-b-line mx-auto border-b">
                 <div className="border-x-line mx-0 flex justify-between border-x-0 px-5 md:mx-10 md:border-x md:px-9">
                     <div className="prose prose-md md:prose-xl dark:prose-invert prose-pre:overflow-x-auto prose-code:wrap-break-word prose-pre:max-w-full mx-auto max-w-full overflow-x-hidden py-7 md:max-w-4xl md:py-10">

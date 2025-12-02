@@ -1,9 +1,14 @@
 import PlusIconHero from "@/components/PlusIconHero";
+import SEO from "@/components/SEO";
 import React from "react";
 
 export function Contact() {
     return (
         <>
+            <SEO
+                title="Contact"
+                description="Get in touch with Danar Septiyanto for project inquiries, collaborations, or any questions about web development services."
+            />
             <div className="bg-bg-secondary">
                 <div className="border-b-line mx-auto border-b">
                     <div className="border-x-line mx-0 border-x-0 md:mx-10 md:grid md:border-x">
@@ -101,6 +106,10 @@ export function Contact() {
 export function ContactSuccess() {
     return (
         <>
+            <SEO
+                title="Message Sent"
+                description="Thank you for contacting Danar Septiyanto. Your message has been successfully sent and will be responded to shortly."
+            />
             <div className="bg-bg-secondary">
                 <div className="border-b-line mx-auto border-b">
                     <div className="border-x-line mx-0 border-x-0 md:mx-10 md:grid md:border-x">

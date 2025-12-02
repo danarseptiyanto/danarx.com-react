@@ -2,6 +2,7 @@ import React from "react";
 import ProjectHero from "@/components/ProjectHero";
 import { ProjectInfo, ProjectContent } from "@/components/ProjectInfo";
 import ProjectGallery from "@/components/ProjectGallery";
+import SEO from "@/components/SEO";
 import useTitle from "@/hooks/useTitle";
 
 const images = [
@@ -15,6 +16,10 @@ export default function TicyKit() {
     useTitle("Project TicyKit - Danar Septiyanto");
     return (
         <>
+            <SEO
+                title="TicyKit"
+                description="Online education platform providing downloadable teaching materials including worksheets, e-books, and lesson modules for teachers and educators."
+            />
             <ProjectHero
                 title="TicyKit"
                 description="Online education platform that provides downloadable teaching materials like worksheets, e-books, and lesson modules. It helps teachers prepare classroom content more easily with ready-made resources.
