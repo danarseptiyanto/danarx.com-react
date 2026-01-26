@@ -92,7 +92,7 @@ export default function Navbar() {
                             to="/contact"
                             className="text-text-primary hover:bg-accent-primary/80 bg-accent-primary border-line hidden h-full items-center border-l px-5 font-semibold transition-colors md:flex"
                         >
-                            Contact
+                            Kontak
                         </Link>
                         {/* Mobile menu button */}
                         <button
