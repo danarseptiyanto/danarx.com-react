@@ -87,7 +87,7 @@ export function Contact() {
                         <input
                             type="hidden"
                             name="_next"
-                            value="https://danarx.com/contact-success"
+                            value="https://danars.net/contact-success"
                         />
                         <input type="hidden" name="_captcha" value="false" />
                     </div>
