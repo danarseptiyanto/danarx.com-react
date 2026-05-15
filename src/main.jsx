@@ -5,12 +5,12 @@ import { HelmetProvider } from "react-helmet-async";
 
 import RootLayout from "./layouts/RootLayout";
 import App from "./App";
-import CV from "./pages/CV";
-import { Contact, ContactSuccess } from "./pages/Contact";
-import BlogList from "./pages/BlogList";
-import BlogPost from "./pages/BlogPost";
-import BelajarEraDigital from "./pages/projects/BelajarEraDigital";
-import NotFound from "./pages/NotFound";
+import CV from "./Pages/CV";
+import { Contact, ContactSuccess } from "./Pages/Contact";
+import BlogList from "./Pages/BlogList";
+import BlogPost from "./Pages/BlogPost";
+import BelajarEraDigital from "./Pages/projects/BelajarEraDigital";
+import NotFound from "./Pages/NotFound";
 import { ThemeProvider } from "./contexts/ThemeProvider";
 
 import "./index.css";
