@@ -9,7 +9,7 @@ import CV from "./Pages/CV";
 import { Contact, ContactSuccess } from "./Pages/Contact";
 import BlogList from "./Pages/BlogList";
 import BlogPost from "./Pages/BlogPost";
-import BelajarEraDigital from "./Pages/projects/BelajarEraDigital";
+import BelajarEraDigital from "./Pages/Projects/BelajarEraDigital";
 import NotFound from "./Pages/NotFound";
 import { ThemeProvider } from "./contexts/ThemeProvider";
 
