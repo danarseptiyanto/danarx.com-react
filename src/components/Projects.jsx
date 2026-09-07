@@ -5,6 +5,11 @@ import { Image } from "@imagekit/react";
 // Projects data array - add your projects here
 const projectsData = [
     {
+        thumbnail: "tudus-thumb.png.png",
+        title: "Tudus",
+        slug: "tudus",
+    },
+    {
         thumbnail: "belajareradigital.png",
         title: "Belajar Era Digital",
         slug: "belajar-era-digital",

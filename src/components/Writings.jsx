@@ -55,13 +55,28 @@ export default function Writings() {
                             programming, sometimes about my thoughts.
                         </p>
                     </div>
-                    {blogPosts.map((post) => (
+                    {blogPosts.slice(0, 3).map((post) => (
                         <WritingCard
                             key={post.slug}
                             title={post.title}
                             url={`/blog/${post.slug}`}
                         />
                     ))}
+                    <div className="border-t-line flex items-center justify-center border-t p-5 md:p-7">
+                        <Link
+                            to="/writings"
+                            className="text-text-primary flex items-center gap-2 text-base font-semibold md:text-xl"
+                        >
+                            Show More
+                            <svg
+                                viewBox="0 0 96 96"
+                                className="fill-text-primary h-5 w-5 md:h-6 md:w-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M64.0148 37.6568L29.5885 72.0832L23.9316 66.4264L58.358 32H28.0149V24H72.0148V68H64.0148V37.6568Z" />
+                            </svg>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="border-b-line mx-auto border-b">

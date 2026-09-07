@@ -7,7 +7,7 @@ import RootLayout from "./layouts/RootLayout";
 import App from "./App";
 import CV from "./Pages/CV";
 import { Contact, ContactSuccess } from "./Pages/Contact";
-import BlogList from "./Pages/BlogList";
+import Writings from "./Pages/Writings";
 import BlogPost from "./Pages/BlogPost";
 import BelajarEraDigital from "./Pages/Projects/BelajarEraDigital";
 import NotFound from "./Pages/NotFound";
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             { index: true, element: <App /> },
-            { path: "blog", element: <BlogList /> },
+            { path: "writings", element: <Writings /> },
             { path: "contact", element: <Contact /> },
             { path: "contact-success", element: <ContactSuccess /> },
             { path: "blog/:slug", element: <BlogPost /> },
