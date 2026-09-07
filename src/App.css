@@ -55,6 +55,23 @@
     --color-text-secondary: #999999;
 }
 
+/* Text selection styling */
+::selection {
+    background-color: var(--color-accent-primary);
+}
+
+/* Blog code styling - fix dark mode code visibility */
+.dark .prose pre {
+    background-color: color-mix(in srgb, var(--color-white) 3%, transparent);
+    border-radius: 0px;
+}
+
+.prose pre {
+    background-color: color-mix(in srgb, var(--color-black) 80%, transparent);
+    border-radius: 0px;
+}
+
+
 /* Smooth color transitions for theme switching */
 /* * {
     transition:

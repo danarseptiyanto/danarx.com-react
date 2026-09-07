@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PlusIconHero from "./PlusIconHero";
-import { Link } from "react-router-dom";
 import LinksHero from "./LinksHero";
 import { Image } from "@imagekit/react";
 
+const heroImages = ["/hero.png", "/hero2.png", "/hero3.png"];
+
 export default function Hero() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [transitionEnabled, setTransitionEnabled] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => prev + 1);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        if (currentIndex >= heroImages.length) {
+            const timeout = setTimeout(() => {
+                setTransitionEnabled(false);
+                setCurrentIndex(0);
+            }, 500);
+            return () => clearTimeout(timeout);
+        }
+    }, [currentIndex]);
+
+    useEffect(() => {
+        if (!transitionEnabled) {
+            const timeout = setTimeout(() => setTransitionEnabled(true), 50);
+            return () => clearTimeout(timeout);
+        }
+    }, [transitionEnabled]);
+
     return (
         <>
             <div className="border-b-line bg-bg-secondary mx-auto border-b">
@@ -25,15 +53,6 @@ export default function Hero() {
                         </div>
                         <div className="flex justify-between">
                             <div className="bg-accent-primary border-t-line hidden aspect-square w-[180px] items-center justify-center border-t md:flex">
-                                {/* <svg
-                                    width="96"
-                                    height="96"
-                                    viewBox="0 0 96 96"
-                                    className="fill-text-primary"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M64.0148 37.6568L29.5885 72.0832L23.9316 66.4264L58.358 32H28.0149V24H72.0148V68H64.0148V37.6568Z" />
-                                </svg> */}
                                 <Image
                                     urlEndpoint="https://ik.imagekit.io/dnrx/danarx/"
                                     src="ui/avatar.jpg"
@@ -61,12 +80,23 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-line border-line border-b md:border-b-0">
-                        <Image
-                            urlEndpoint="https://ik.imagekit.io/dnrx/danarx/ui/"
-                            src="/hero.png"
-                            className="aspect-auto h-[40vh] w-full object-cover md:h-full"
-                        />
+                    <div className="bg-line border-line relative overflow-hidden border-b md:border-b-0">
+                        <div
+                            className={`flex h-full w-full ${transitionEnabled ? "transition-transform duration-500 ease-in-out" : ""}`}
+                            style={{
+                                transform: `translateX(-${currentIndex * 100}%)`,
+                            }}
+                        >
+                            {[...heroImages, heroImages[0]].map((src, i) => (
+                                <div key={i} className="h-full w-full shrink-0">
+                                    <Image
+                                        urlEndpoint="https://ik.imagekit.io/dnrx/danarx/ui/"
+                                        src={src}
+                                        className="h-full w-full object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

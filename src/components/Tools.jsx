@@ -15,7 +15,7 @@ export default function Tools() {
                     </p>
                 </div>
                 <div className="md:border-t-line divide-line grid grid-cols-2 divide-x divide-y md:grid-cols-5 md:divide-y-0 md:border-t">
-                    <div className="row-span-2 flex w-full items-center justify-center py-10">
+                    <div className="row-span-2 flex w-full items-center justify-center py-10 hover:bg-black/5 dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 width="51"
@@ -37,7 +37,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="row-span-2 flex w-full items-center justify-center py-10">
+                    <div className="row-span-2 flex w-full items-center justify-center py-10 hover:bg-black/5 dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 viewBox="0 0 56 50"
@@ -51,7 +51,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="flex w-full items-center justify-center py-10">
+                    <div className="flex w-full items-center justify-center py-10 hover:bg-black/5 dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 width="45"
@@ -84,7 +84,7 @@ export default function Tools() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex w-full items-center justify-center py-10">
+                    <div className="flex w-full items-center justify-center py-10 hover:bg-black/5 dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 width="23"
@@ -100,7 +100,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="flex w-full items-center justify-center py-10">
+                    <div className="flex w-full items-center justify-center py-10 hover:bg-black/5 dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 viewBox="0 0 38 38"
@@ -114,7 +114,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="md:border-t-line flex w-full items-center justify-center py-10 md:border-t">
+                    <div className="md:border-t-line flex w-full items-center justify-center py-10 hover:bg-black/5 md:border-t dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 viewBox="0 0 37 37"
@@ -128,7 +128,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="md:border-t-line flex w-full items-center justify-center py-10 md:border-t">
+                    <div className="md:border-t-line flex w-full items-center justify-center py-10 hover:bg-black/5 md:border-t dark:hover:bg-white/2">
                         <div className="flex items-center justify-center gap-3.5">
                             <svg
                                 viewBox="0 0 43 24"
@@ -143,7 +143,7 @@ export default function Tools() {
                             </span>
                         </div>
                     </div>
-                    <div className="md:border-t-line text-text-primary bg-line flex w-full items-center justify-center py-10 text-base md:border-t md:text-lg">
+                    <div className="md:border-t-line text-text-primary bg-line hover:bg-black/5md:border-t text-bas2 flex w-full items-center justify-center py-10 md:text-lg dark:hover:bg-white/10">
                         And many others..
                     </div>
                 </div>

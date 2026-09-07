@@ -44,7 +44,7 @@ export default function BlogPost() {
                         <div className="-mb-2 flex items-center justify-between">
                             <Link
                                 className="inline-flex items-center gap-1.5 text-base no-underline md:text-lg"
-                                to="/#writing"
+                                to="/writings"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="border-b-line bg-bg-primary mx-auto border-b">
                 <div className="border-x-line mx-0 flex h-[85px] items-center justify-center border-x-0 md:mx-10 md:justify-between md:border-x md:px-9">
                     <div className="text-text-primary text-base md:text-lg">
-                        Danar Septiyanto © 2025
+                        Danar Septiyanto © {new Date().getFullYear()}
                     </div>
                     <div className="hidden items-center gap-5 md:flex">
                         <a
